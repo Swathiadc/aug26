@@ -1,0 +1,31 @@
+ main() {
+
+    char str[100];
+    int i;
+    int upper=0,lower=0,num=0;
+    printf(" enter the string \n");
+    gets(str);
+    for(i=0; str[i] != '\0'; i++){
+            if(str[i]>='A' && str[i]<='Z') {
+                upper++;
+    }else if(str[i]>='a' && str[i]<='z') {
+                lower++;
+    }else  { 
+                num++;
+    }
+    }
+    printf("\nUpper case letters: %d",upper);
+    printf("\nLower case letters: %d",lower);
+    printf("\nNumbers: %d",num);
+
+    
+
+    return 0;
+}
+OUTPUT:
+
+ enter the string 
+Aditya@123
+Upper case letters: 1
+Lower case letters: 5
+Numbers: 4

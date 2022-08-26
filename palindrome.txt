@@ -1,0 +1,22 @@
+ main()
+{
+    int i,n; 
+    char str[50];
+    printf (" Enter a string\n  ");  
+    gets(str);
+    printf("reverse %d\n",strrev(str));
+    if(str==strrev(str))
+    printf("palindrome");
+    else
+    printf("not palindrome");
+     
+
+    return 0;
+}
+
+
+output
+enter a string
+aditya
+aytida
+not palindrome
